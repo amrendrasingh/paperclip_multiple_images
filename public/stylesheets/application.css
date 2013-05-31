@@ -1,5 +1,5 @@
 body {
-  background-color: #4B7399;
+  background-color: #808080;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
@@ -73,3 +73,8 @@ a {
 .error_messages ul {
   margin: 0;
 }
+.txt_area{border-radius: 15px;resize: none;}
+
+.text_box{ padding:10px; border-radius: 10px;}
+.div_new{font-weight: bold;color: gray;}
+.sub_btn{padding: 10px;background: gray;border-radius: 10px;}

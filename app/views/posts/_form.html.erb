@@ -1,14 +1,17 @@
+<div class="div_new">
 <%= form_for @post, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
+    <%= f.text_field :title, :class => "text_box", :size => 40 %>
   </p>
 
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content,:class => "txt_area" %>
+  </p>
+
+      </div>
 	<h4>New Files</h4>
 	
 	<% f.fields_for :assets do |asset_fields| %>
@@ -35,6 +38,7 @@
 	
 	<% end %>
 
-  <p><%= f.submit %></p>
+  <p><%= f.submit 'Create Post',:class => "sub_btn" %></p>
 
 <% end %>
+
